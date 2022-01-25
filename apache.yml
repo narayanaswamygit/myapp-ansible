@@ -1,1 +1,14 @@
-
+---
+- hosts: webservers 
+  become: True
+  tasks:
+    - name: Install packages
+      apt:
+        name: "nginx"
+        state: "latest"
+    - name: Start Nginx server
+      service:
+        name: nginx
+        state: started
+        enabled: True
+...
