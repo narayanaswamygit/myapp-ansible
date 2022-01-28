@@ -1,2 +1,3 @@
 [webservers]
-20.62.100.22 ansible_user=azureuser 
+20.127.134.63 ansible_user=azureuser 
+ 
